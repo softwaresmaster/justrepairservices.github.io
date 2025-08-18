@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just Repair Services - Home Appliance Repair in Hyderabad</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <style>
+      :root {
+        --primary-color: #1a5276;
+        --secondary-color: #2980b9;
+        --accent-color: #e67e22;
+        --light-color: #f8f9fa;
+        --dark-color: #343a40;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        overflow-x: hidden;
+      }
+
+      .navbar {
+        background-color: var(--primary-color);
+      }
+
+      .navbar-brand {
+        font-weight: 700;
+      }
+
+      .hero-section {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("/images/banner.jpg");
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 100px 0;
+        text-align: center;
+      }
+
+      .service-card {
+        transition: transform 0.3s;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        border-radius: 10px;
+      }
+
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .service-icon {
+        font-size: 3rem;
+        color: var(--accent-color);
+        margin-bottom: 15px;
+      }
+
+      .btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+      }
+
+      .btn-primary:hover {
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+      }
+
+      .btn-accent {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+        color: white;
+      }
+
+      .btn-accent:hover {
+        background-color: #d35400;
+        border-color: #d35400;
+        color: white;
+      }
+
+      footer {
+        background-color: var(--dark-color);
+        color: white;
+        padding: 40px 0;
+      }
+
+      .social-icon {
+        color: white;
+        font-size: 1.5rem;
+        margin: 0 10px;
+        transition: color 0.3s;
+      }
+
+      .social-icon:hover {
+        color: var(--accent-color);
+      }
+
+      .testimonial-card {
+        background-color: var(--light-color);
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .testimonial-author {
+        font-weight: bold;
+        color: var(--primary-color);
+      }
+
+      .contact-info-card {
+        background-color: var(--light-color);
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .contact-icon {
+        font-size: 2rem;
+        color: var(--accent-color);
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <b><a class="navbar-brand">JUST REPAIR SERVICES</a></b>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <a href="tel:07670973728" class="btn btn-accent ms-lg-3">
+            <i class="fas fa-phone-alt me-2"></i>Call Now
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-4">
+          Professional Appliance Repair Services
+        </h1>
+        <p class="lead mb-5">
+          Fast, reliable, and affordable repair services for all your home
+          appliances in Hyderabad
+        </p>
+        <div class="d-flex justify-content-center gap-3">
+          <a
+            class="btn btn-primary btn-lg px-4"
+            data-bs-toggle="modal"
+            data-bs-target="#serviceModal">
+            <i class="fas fa-calendar-alt me-2"></i>Book Service
+          </a>
+          <a href="tel:07670973728" class="btn btn-accent btn-lg px-4">
+            <i class="fas fa-phone-alt me-2"></i>07670973728
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Our Services</h2>
+          <p class="lead text-muted">
+            Quality repairs for all major home appliances
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card card h-100">
+              <div class="card-body text-center p-4">
+                <div class="service-icon">
+                  <img
+                    src="images/rf.jpg"
+                    alt="Refrigerator repair"
+                    style="width: 100%; height: auto" />
+                </div>
+                <h4 class="card-title">Refrigerator Repair</h4>
+                <p class="card-text">
+                  Expert repairs for all refrigerator brands and models,
+                  including cooling issues, compressor problems, and more.
+                </p>
+                <a href="#contact" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card card h-100">
+              <div class="card-body text-center p-4">
+                <div class="service-icon">
+                  <img
+                    src="images/ac.jpg"
+                    alt="Air-Conditioner repair"
+                    style="width: 100%; height: auto" />
+                </div>
+                <h4 class="card-title">AC Repair</h4>
+                <p class="card-text">
+                  Professional air conditioner servicing and repair for split,
+                  window, and central AC units.
+                </p>
+                <a href="#contact" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card card h-100">
+              <div class="card-body text-center p-4">
+                <div class="service-icon">
+                  <img
+                    src="images/wm.jpg"
+                    alt="Washing Machine"
+                    style="width: 100%; height: auto" />
+                </div>
+
+                <h4 class="card-title">Washing Machine Repair</h4>
+                <p class="card-text">
+                  Comprehensive washing machine repairs for top load, front
+                  load, and semi-automatic machines.
+                </p>
+                <a href="#contact" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="service-card card h-100">
+              <div class="card-body text-center p-4">
+                <div class="service-icon">
+                  <img
+                    src="images/image.jpg"
+                    alt="Refrigerator repair"
+                    style="width: 100%; height: auto" />
+                </div>
+                <h4 class="card-title">Microwave Repair</h4>
+                <p class="card-text">
+                  Expert microwave oven repairs including heating issues,
+                  turntable problems, and electrical faults.
+                </p>
+                <a href="#contact" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img
+              src="images/about.jpg"
+              alt="Appliance Repair Technician"
+              class="img-fluid rounded" />
+          </div>
+          <div class="col-lg-6">
+            <h2 class="fw-bold mb-4">About Just Repair Services</h2>
+            <p class="lead">
+              Your trusted appliance repair service in Hyderabad
+            </p>
+            <p>
+              With years of experience in the industry,
+              <b>Just Repair Services</b> has become a trusted name for home
+              appliance repairs in Mehdipatnam and surrounding areas. Our team
+              of certified technicians is committed to providing fast, reliable,
+              and affordable repair services for all major home appliances.
+            </p>
+            <p>
+              We understand how important your appliances are to your daily
+              life, which is why we prioritize quick response times and quality
+              workmanship. Whether it's a refrigerator that's not cooling, an AC
+              that's not working, or a washing machine that's leaking, we've got
+              you covered.
+            </p>
+            <div class="d-flex gap-3">
+              <div class="text-center">
+                <h3 class="text-primary">4000+</h3>
+                <p>Repairs Completed</p>
+              </div>
+              <div class="text-center">
+                <h3 class="text-primary">15+</h3>
+                <p>Years Experience</p>
+              </div>
+              <div class="text-center">
+                <h3 class="text-primary">24/7</h3>
+                <p>Emergency Service</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Why Choose Us</h2>
+          <p class="lead text-muted">
+            We provide the best service in Hyderabad
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 bg-transparent">
+              <div class="card-body text-center">
+                <i class="fas fa-certificate fa-3x text-primary mb-3"></i>
+                <h4 class="card-title">Certified Technicians</h4>
+                <p class="card-text">
+                  Our technicians are certified and trained to work on all major
+                  appliance brands.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 bg-transparent">
+              <div class="card-body text-center">
+                <i class="fas fa-clock fa-3x text-primary mb-3"></i>
+                <h4 class="card-title">Same-Day Service</h4>
+                <p class="card-text">
+                  We understand emergencies happen and offer same-day service
+                  for most repairs.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 bg-transparent">
+              <div class="card-body text-center">
+                <i class="fas fa-rupee-sign fa-3x text-primary mb-3"></i>
+                <h4 class="card-title">Affordable Pricing</h4>
+                <p class="card-text">
+                  Competitive pricing with no hidden fees. We provide upfront
+                  estimates.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 bg-transparent">
+              <div class="card-body text-center">
+                <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+                <h4 class="card-title">Warranty on Repairs</h4>
+                <p class="card-text">
+                  All our repairs come with a warranty for your peace of mind.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 bg-transparent">
+              <div class="card-body text-center">
+                <i class="fas fa-tools fa-3x text-primary mb-3"></i>
+                <h4 class="card-title">Genuine Parts</h4>
+                <p class="card-text">
+                  We use only genuine or high-quality replacement parts for all
+                  repairs.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 bg-transparent">
+              <div class="card-body text-center">
+                <i class="fas fa-home fa-3x text-primary mb-3"></i>
+                <h4 class="card-title">At Your Convenience</h4>
+                <p class="card-text">
+                  We come to you at a time that works best for your schedule.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">What Our Customers Say</h2>
+          <p class="lead text-muted">Don't just take our word for it</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="mb-3">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+              <p class="mb-3">
+                "My refrigerator stopped cooling suddenly. Just Repair Services
+                sent a technician the same day who diagnosed and fixed the
+                problem quickly. Very professional service!"
+              </p>
+              <p class="testimonial-author mb-0">- Ramesh Kumar</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="mb-3">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+              <p class="mb-3">
+                "The AC repair service was excellent. The technician was
+                knowledgeable and explained everything clearly. My AC is working
+                better than ever now."
+              </p>
+              <p class="testimonial-author mb-0">- Priya Sharma</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="mb-3">
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star-half-alt text-warning"></i>
+              </div>
+              <p class="mb-3">
+                "Fixed my washing machine leak issue at a reasonable price.
+                Quick response and quality service. Will definitely call them
+                again for any appliance problems."
+              </p>
+              <p class="testimonial-author mb-0">- Abdul Qadeer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Contact Us</h2>
+          <p class="lead text-muted">
+            Get in touch for fast appliance repair service
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col">
+            <div class="contact-info-card">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h4>Our Location</h4>
+              <p>
+                #10-3-13, Shop No 103, Mawin Gold Plaza, Mehdipatnam Main Road,
+                Circle 27, Hyderabad - 500028, Telangana
+              </p>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <h4>Call Us</h4>
+              <p><a href="tel:07670973728">07670973728</a></p>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h4>Email Us</h4>
+              <p>
+                <a href="mailto:hello@justrepairservices.in"
+                  >hello@justrepairservices.in</a
+                >
+              </p>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h4>Working Hours</h4>
+              <p>
+                Monday - Sunday: 8:00 AM - 9:00 PM<br />Emergency services
+                available 24/7
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-0">
+      <div class="container-fluid p-0">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d353.9717207354549!2d78.44270321569154!3d17.39473261572691!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9705aae90611%3A0xfb8624e4af63f657!2sJust%20Repair%20Services!5e0!3m2!1sen!2sin!4v1747555721329!5m2!1sen!2sin"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <h3>JUST REPAIR SERVICES</h3>
+            <p>
+              Your trusted partner for all home appliance repairs in Hyderabad.
+              Fast, reliable, and affordable service you can count on.
+            </p>
+            <div class="mt-4">
+              <a href="https://www.facebook.com" class="social-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.instagram.com" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.justdial.com" class="social-icon"
+                ><i class="fas fa-phone-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5>Services</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-white text-decoration-none"
+                  >Refrigerator Repair</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white text-decoration-none"
+                  >AC Repair</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white text-decoration-none"
+                  >Washing Machine Repair</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-white text-decoration-none"
+                  >Microwave Repair</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+            <h5>Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-white text-decoration-none">Home</a>
+              </li>
+              <li class="mb-2">
+                <a href="#services" class="text-white text-decoration-none"
+                  >Services</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#about" class="text-white text-decoration-none"
+                  >About Us</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#contact" class="text-white text-decoration-none"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h5>Newsletter</h5>
+            <p>
+              Subscribe to our newsletter for tips on appliance maintenance and
+              special offers.
+            </p>
+            <form id="newsletterForm" action="send_email.php" method="POST">
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  id="newsletterEmail"
+                  placeholder="Your email address"
+                  required />
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <hr class="mt-4 mb-4" style="border-color: rgba(255, 255, 255, 0.1)" />
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0">
+              &copy; 2023 Just Repair Services. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <p class="mb-0">
+              Designed &amp; developed by
+              <a href="https://alehsanmt.com" target="_blank"
+                >Al-Ehsan Media &amp; Tech</a
+              >
+              | <a href="privacy-policy.html">Privacy Policy</a> |
+              <a href="terms.html">Terms</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a
+      href="https://wa.me/+917670973728"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer">
+      <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+    <style>
+      .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: pulse 2s infinite;
+        text-decoration: none;
+      }
+
+      .whatsapp-icon {
+        margin-top: 2px;
+      }
+
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+        }
+        70% {
+          box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+        }
+      }
+
+      /* For mobile responsiveness */
+      @media (max-width: 768px) {
+        .whatsapp-float {
+          width: 50px;
+          height: 50px;
+          bottom: 20px;
+          right: 20px;
+          font-size: 25px;
+        }
+      }
+    </style>
+
+    <!-- Newsletter Modal -->
+    <!-- <div
+      class="modal fade"
+      id="newsletterModal"
+      tabindex="-1"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Stay Updated!</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Subscribe to our newsletter for appliance maintenance tips and
+              special offers!
+            </p>
+            <form id="newsletterForm">
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="newsletterEmail"
+                  placeholder="Your email address"
+                  required />
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Success Alert (hidden by default) -->
+    <div
+      id="successAlert"
+      class="alert alert-success position-fixed top-0 end-0 m-3"
+      style="display: none; z-index: 1100">
+      Thank you for subscribing! Please check your email to confirm.
+    </div>
+
+    <!-- Service Booking Modal -->
+    <div
+      class="modal fade"
+      id="serviceModal"
+      tabindex="-1"
+      aria-labelledby="serviceModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="serviceModalLabel">
+              Book a Service or Request a Quote
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="serviceForm" action="send_mail.php" method="POST">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="name"
+                    id="name"
+                    required />
+                </div>
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone Number</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    name="phone"
+                    id="phone"
+                    required />
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email" />
+                </div>
+                <div class="col-md-6">
+                  <label for="service" class="form-label">Service Needed</label>
+                  <select
+                    class="form-select"
+                    name="service"
+                    id="service"
+                    required>
+                    <option value="">Select Service</option>
+                    <option value="refrigerator">Refrigerator Repair</option>
+                    <option value="ac">AC Repair</option>
+                    <option value="washing-machine">
+                      Washing Machine Repair
+                    </option>
+                    <option value="microwave">Microwave Repair</option>
+                    <option value="other">Other Appliance</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label"
+                    >Describe the Problem</label
+                  >
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    id="message"
+                    rows="4"></textarea>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      name="emergency"
+                      id="emergency" />
+                    <label class="form-check-label" for="emergency"
+                      >Emergency Service Needed</label
+                    >
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary btn-lg">
+                    Submit Request
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("serviceForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const formData = new FormData(this);
+
+          fetch("send_mail.php", {
+            method: "POST",
+            body: formData,
+          })
+            .then((res) => res.text())
+            .then((res) => {
+              if (res.trim() === "success") {
+                alert("Thank you! Your service request has been submitted.");
+                bootstrap.Modal.getInstance(
+                  document.getElementById("serviceModal")
+                ).hide();
+                this.reset();
+              } else {
+                alert("Error submitting the form. Please try again later.");
+              }
+            })
+            .catch(() => {
+              alert("Submission failed. Please try again later.");
+            });
+        });
+    </script>
+
+    <!-- Bootstrap 5 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+    <script>
+      // Show modal after 5 seconds
+      setTimeout(function () {
+        var newsletterModal = new bootstrap.Modal(
+          document.getElementById("newsletterModal")
+        );
+        newsletterModal.show();
+      }, 5000);
+
+      // Handle form submission
+      document
+        .getElementById("newsletterForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          var userEmail = document.getElementById("newsletterEmail").value;
+          var yourEmail = "justrepairserviceshyd@gmail.com";
+          var subject = "New Newsletter Subscriber";
+          var body =
+            "Please add this email to your newsletter list: " + userEmail;
+
+          // Create mailto link
+          var mailtoLink =
+            "mailto:" +
+            yourEmail +
+            "?subject=" +
+            encodeURIComponent(subject) +
+            "&body=" +
+            encodeURIComponent(body);
+
+          // Open user's email client
+          window.location.href = mailtoLink;
+
+          // Show success message
+          document.getElementById("successAlert").style.display = "block";
+          setTimeout(function () {
+            document.getElementById("successAlert").style.display = "none";
+          }, 5000);
+
+          // Hide modal
+          var newsletterModal = bootstrap.Modal.getInstance(
+            document.getElementById("newsletterModal")
+          );
+          newsletterModal.hide();
+
+          // Reset form
+          this.reset();
+        });
+    </script>
+  </body>
+</html>
